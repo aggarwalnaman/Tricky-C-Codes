@@ -1,0 +1,23 @@
+#include <stdio.h>
+void kangaroo(int x1, int v1, int x2, int v2) {
+    char* s="NO";
+  
+   float n;
+   n=(float)(x2-x1)/(float)(v1-v2);
+   n=n*10;
+   if(n>0)
+   {
+   int c;
+   c=(int)n%10;
+   if(c==0)
+    s="YES";
+   }
+    printf("%s",s);
+}
+int main()
+{
+    int x1,v1,x2,v2;
+    scanf("%d %d %d %d",&x1,&v1,&x2,&v2);
+    kangaroo(x1,v1,x2,v2);
+    return 0;
+}
